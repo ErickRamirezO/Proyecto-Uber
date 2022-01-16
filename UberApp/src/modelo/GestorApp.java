@@ -9,6 +9,7 @@ public class GestorApp {
         FrmRegistro f1 = new FrmRegistro();
         f1.setVisible(true);
         f1.setLocationRelativeTo(null);
+        //
     }
     
 }
