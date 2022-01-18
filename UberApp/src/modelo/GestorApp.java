@@ -1,15 +1,18 @@
 
 package modelo;
 
-import vista.FrmRegistro;
+import vista.FormularioRegistro;
+import vista.InicioSesion;
 
 public class GestorApp {
 
     public static void main(String[] args) {
-        FrmRegistro f1 = new FrmRegistro();
-        f1.setVisible(true);
-        f1.setLocationRelativeTo(null);
-        //
+        InicioSesion is = new InicioSesion();
+        //Titulos a las interfaces gráficas
+        is.setTitle("Bienvenido");
+        is.setVisible(true);
+        is.setLocationRelativeTo(null);
     }
-    
+
+   
 }
