@@ -1,6 +1,6 @@
 
 package controlador;
 
-public class ControladorCliente {
+public class ControladorPago {
     
 }

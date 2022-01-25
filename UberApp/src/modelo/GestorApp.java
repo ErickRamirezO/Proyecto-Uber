@@ -1,7 +1,5 @@
 
 package modelo;
-
-import vista.FormularioRegistro;
 import vista.InicioSesion;
 
 public class GestorApp {
