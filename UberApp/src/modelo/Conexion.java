@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package modelo;
 
 //Clase para la conexión con la base de datos
@@ -16,7 +12,7 @@ public class Conexion {
     //Creo una base de datos
     DB baseDatos;
     //Creamos un objeto de tipo colección
-    DBCollection coleccion;
+    DBCollection coleccion,coleccion2;
     //Creo un documento
     BasicDBObject documento = new BasicDBObject();
     
@@ -25,8 +21,9 @@ public class Conexion {
         MongoClient mongo = new MongoClient("localhost",27017);
         //Obtenemos la base de datos con getDB
         baseDatos = mongo.getDB("ServicioDomesticoUber");
-        //Obtenemos la colección
-        coleccion = baseDatos.getCollection("proveedores");
+        //Creamos dos colecciones una para los cliente y otra para los empleados
+        coleccion = baseDatos.getCollection("cliente");
+        coleccion2 = baseDatos.getCollection("empleado");
         //Mandamos un mensaje verificando la conexión a la base de datos.
         System.out.println("Conexión a Base de Datos exitoso");
     }   

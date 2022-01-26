@@ -2,17 +2,16 @@
 package modelo;
 
 //Herencia de la Clase Usuario
-enum Habilidades{lavado_y_planchado, limpieza, cocina}
 
 public class Empleado extends Usuario {
     private int cedula;
     private String nombre_usuario;
     private int otro_numero;
-    private Habilidades habilidades;
+    private String habilidades;
     private String calle_principal, calle_secundaria,numeracion_domicilio;
     private String contraseña;
 
-    public Empleado(int cedula, String nombre_usuario, int otro_numero, Habilidades habilidades, String calle_principal, String calle_secundaria, String numeracion_domicilio, String contraseña, String nombre, String apellido, int telefono, String fecha_nacimiento, char sexo, String correo_electronico) {
+    public Empleado(int cedula, String nombre_usuario, int otro_numero, String habilidades, String calle_principal, String calle_secundaria, String numeracion_domicilio, String contraseña, String nombre, String apellido, int telefono, String fecha_nacimiento, char sexo, String correo_electronico) {
         super(nombre, apellido, telefono, fecha_nacimiento, sexo, correo_electronico);
         this.cedula = cedula;
         this.nombre_usuario = nombre_usuario;
@@ -53,11 +52,11 @@ public class Empleado extends Usuario {
         this.otro_numero = otro_numero;
     }
 
-    public Habilidades getHabilidades() {
+    public String getHabilidades() {
         return habilidades;
     }
 
-    public void setHabilidades(Habilidades habilidades) {
+    public void setHabilidades(String habilidades) {
         this.habilidades = habilidades;
     }
 
